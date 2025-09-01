@@ -710,3 +710,77 @@ footer {
         max-width: 500px;
     }
 }
+
+  :root {
+    --bg: #0d1117;      /* dark background */
+    --card: #161b22;    /* slightly lighter dark for contrast */
+    --text: #e6edf3;    /* light text */
+    --muted: #8b949e;   /* subtle gray */
+    --accent: #2f81f7;  /* blue highlight */
+    --radius: 14px;
+  }
+
+  .about-section {
+    width: 100%;
+    padding: 80px 0 80px 0; /* Remove left padding */
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: flex-start;      /* Align to top */
+  }
+
+  .about-container {
+    max-width: 700px;
+    width: 100%;
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .4);
+    margin-left: 0; /* Already flush left, keep this */
+  }
+
+  .about-title,
+  .about-text {
+    text-align: left;
+  }
+
+  .about-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 20px;
+    border-left: 4px solid var(--accent);
+    padding-left: 12px;
+  }
+
+  .about-text {
+    font-size: 1.05rem;
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+
+  .about-list {
+    display: grid;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .about-item {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);    
+    padding: 16px 20px;
+    border-radius: var(--radius);
+    color: var(--text);
+    transition: all 0.3s ease;
+  }
+
+  .about-item:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+  }
+
+  .about-item strong {
+    color: var(--accent);
+  }
