@@ -302,9 +302,9 @@ h1 {
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  max-width: 1200px;   /* keeps max 3 cards in a row */
+  max-width: 950px;   /* keeps max 3 cards in a row */
   margin: 0 auto;      /* center the grid */
-  gap: 24px;
+  gap: 45px;
   padding: 20px;
 }
 
